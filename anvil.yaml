@@ -1,4 +1,27 @@
 allow_embedding: false
+db_schema:
+  feedback:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: name
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: email
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: feedback
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: created
+      type: datetime
+    server: full
+    title: feedback
+  table_2:
+    client: none
+    columns: []
+    server: full
+    title: Table 2
 name: Serverless Computing with Anvil
 package_name: Serverless_Computing_with_Anvil
 runtime_options:
